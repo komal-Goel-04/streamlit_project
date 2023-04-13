@@ -29,6 +29,8 @@ if selected == "Image":
         if picture:
             st.image(picture)
 
+    value = st.text_input("Enter a caption", max_chars=90)
+
 if selected == "Video":
     videos = st.file_uploader("Please upload an video",
                               type="mp4", accept_multiple_files=True)
